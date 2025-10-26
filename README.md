@@ -1,4 +1,4 @@
-##ゲームのプレイ
+#ゲームのプレイ
 windows-amd64/HippariShooting.exeからゲームをプレイできます。
 
 ##プログラムを動かす
