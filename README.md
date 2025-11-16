@@ -12,3 +12,5 @@ https://1drv.ms/u/c/6087f855e4f022db/Edsi8ORV-IcggGB35wAAAAABPaM-WUbJqyL0XUwN1iX
 
 ## リファクタリング版
 https://github.com/Masayuki0623/Hippari_Shooting_refactored
+
+こちらはPythonで動作します。
