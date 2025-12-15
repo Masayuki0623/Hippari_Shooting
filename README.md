@@ -1,18 +1,12 @@
 ## Hippari Shooting — マウス“ひっぱり”アクション・シューティング
 
-マウス操作でキャラクターを“ひっぱり”加速させてショットを放つ、アクション寄りの2Dシューティングです。物理挙動を活かした操作感と、ステージごとに異なる敵挙動・UI演出を実装しています。ゲーム会社志望としてのポートフォリオ作品です。
+マウス操作でキャラクターをひっぱり、ショットを放つ、アクション寄りの2Dシューティングです。物理挙動を活かした操作感と、ステージごとに異なる敵挙動・UI演出を実装しています。
 
 ---
 
-### デモ動画（YouTube）
+### デモ動画（GIF）
 
-> GitHubのREADMEでは`iframe`によるYouTubeの直接再生はできません（セキュリティのため無効化）。そのため以下は「クリックでYouTubeを開く」サムネイルリンクです。URLをご共有いただければ差し替えます。
-
-<a href="https://www.youtube.com/watch?v=If9xWkEPlcU" target="_blank" rel="noopener">
-  <img src="https://img.youtube.com/vi/If9xWkEPlcU/hqdefault.jpg" alt="YouTubeでデモ動画を見る" width="640" />
-</a>
-
-> 代替案として、短いGIFを挿入すればREADME上で即時再生のプレビューも可能です（ファイルサイズは10MB以下推奨）。ご希望なら作成します。
+![Hippari Shooting Demo](./Videotogif.gif)
 
 ---
 
@@ -27,35 +21,25 @@ https://1drv.ms/u/c/6087f855e4f022db/Edsi8ORV-IcggGB35wAAAAABPaM-WUbJqyL0XUwN1iX
 ## 概要
 - プラットフォーム: Processing（Javaベース）
 - 主なライブラリ: Minim, Sound
-- 主な特徴: ひっぱり操作による加速ショット、段階的な敵挙動、UI演出、効果音
+- 主な特徴: スリングショット×弾幕シューティング
 
-## ゲームの特徴
-- ひっぱり操作: マウスドラッグでテンションを溜め、リリースでショットを放つ操作感。
-- 誘導する視線表現: 敵方向を向く目線アニメーションで“次の行動”を自然に示唆。
-- 演出とチューニング: 無敵時間点滅、ゴム紐の張力表現、効果音のタイミング最適化。
-- 拡張性を意識した構成: 敵の種類・シーン遷移・UIを分離して実装。
 
 ## 操作方法
 - マウス移動: プレイヤーの基本位置を追従。
 - マウスドラッグ: ゴム紐（スリング）を伸ばしてテンションを溜める。
 - マウスリリース: 溜めに応じた速度でショットを発射。
 
-## スクリーンショット / GIF（任意）
-リポジトリにプレビュー用画像/GIFを追加すればここに表示できます。必要なら撮影・追加まで対応します。
-
----
-
-## 開発情報
 
 ### 動作環境
-- Processing 3.x/4.x（推奨: 最新版）
+- Processing 
 - 依存ライブラリ: Minim, Sound（ProcessingのContribution Managerから導入可能）
 
 ### ビルド & 実行（開発用）
 1. Processing をインストール
 2. 本ディレクトリをスケッチとして開く
-3. メインファイル（例: `Prototype5.pde`）を開いて再生ボタンで実行
-4. Minim / Sound を導入（初回のみ）
+3. Minim / Sound を導入（初回のみ）
+4. ファイルを開いて再生ボタンで実行
+ 
 
 ### ファイル構成（抜粋）
 - `Prototype5.pde`: エントリーポイント（ゲームループ/シーン管理）
@@ -65,7 +49,7 @@ https://1drv.ms/u/c/6087f855e4f022db/Edsi8ORV-IcggGB35wAAAAABPaM-WUbJqyL0XUwN1iX
 - `UI.pde`: UI描画・演出
 - `Sound.pde`: 効果音のロード・再生（`s/` ディレクトリ）
 - `array.pde` / `calculation.pde`: 汎用配列・数値計算ユーティリティ
-- `p/`: 画像アセット（背景/キャラクターなど）
+- `p/`: 画像アセット（未使用）
 - `s/`: サウンドアセット（効果音）
 
 ### 設計のポイント
@@ -77,26 +61,10 @@ https://1drv.ms/u/c/6087f855e4f022db/Edsi8ORV-IcggGB35wAAAAABPaM-WUbJqyL0XUwN1iX
 
 ## ダウンロード / 配布
 - OneDrive配布（上記リンク）
-- 必要に応じて itch.io / GitHub Releases への掲載にも対応可能です。
+
 
 ## リファクタリング版（Python）
 https://github.com/Masayuki0623/Hippari_Shooting_refactored
 
 ※ Python 版は設計の見直し・リファクタリングに重点を置いた別実装です。
 
----
-
-## 今後の展望
-- ステージ拡張と敵AIの多様化（弾幕/分裂/ランダム歩行の組み合わせ）
-- 当たり判定の改善とパフォーマンス微調整
-- スコアリング/コンボ/実績の導入
-- コントローラ対応・モバイル対応
-
-## 連絡先
-- Author: Masayuki
-- Portfolio/Contact: （ご指定があれば追記します）
-
----
-
-## 補足: READMEでのYouTube再生について
-GitHubのREADMEでは`<iframe>`による直接再生ができないため、サムネイル画像+リンク方式を採用しています。もし「README内での即時再生」に近づけたい場合は短いGIFを用意し、クリックでYouTubeに遷移する導線を組み合わせるのが実務では一般的です。YouTubeのURLをご共有いただければ本README内のリンクを反映します。
