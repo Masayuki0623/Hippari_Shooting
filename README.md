@@ -8,6 +8,8 @@
 
 ![Hippari Shooting Demo](./Videotogif.gif)
 
+フルデモはこちら（YouTube）：https://youtu.be/If9xWkEPlcU
+
 ---
 
 ### 今すぐプレイ（Windows 実行ファイル）
